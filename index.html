@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ignacio Faúndez Pérez | Portafolio Profesional</title>
     <style>
-        /* Estilo para Modo Oscuro (Dark Mode) */
+        /* Estilos Globales para Modo Oscuro (Dark Mode) */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
             max-width: 900px;
             margin: 20px auto;
-            background-color: #111; /* CAMBIO: Fondo negro/gris muy oscuro */
-            color: white; /* CAMBIO: Color de texto principal a blanco */
+            background-color: #111; /* Fondo negro/gris muy oscuro */
+            color: white; /* Color de texto principal a blanco */
         }
         header {
-            background-color: #111; /* Fondo del encabezado a oscuro */
+            background-color: #111; /* Fondo del encabezado oscuro */
             padding: 20px;
             text-align: center;
             border-radius: 8px;
@@ -28,13 +28,15 @@
         nav a { 
             margin: 0 15px; 
             text-decoration: none; 
-            color: #8ab4f8; /* Un azul más claro que contrasta con el fondo oscuro */
+            color: #8ab4f8; /* Azul claro para los enlaces de navegación */
             font-weight: bold; 
         }
         section { 
             padding: 20px 0; 
-            border-bottom: 1px solid #333; /* Línea separadora más oscura */
+            border-bottom: 1px solid #333; /* Línea separadora oscura */
         }
+        
+        /* Estilo para las etiquetas de Habilidades */
         .habilidades { 
             list-style: none; 
             padding: 0; 
@@ -42,22 +44,47 @@
         .habilidades li { 
             display: inline-block; 
             background: #333; /* Fondo oscuro para las etiquetas de habilidad */
-            color: white; /* Texto blanco en las etiquetas */
+            color: white; 
             padding: 5px 10px; 
             margin: 5px; 
             border-radius: 5px; 
         }
-        /* Ajuste para los divs de Experiencias */
-        div[style*="border: 1px solid #ccc"] {
-             border: 1px solid #333 !important; /* Ajustar el borde a oscuro */
-             background-color: #1a1a1a; /* Un fondo ligeramente diferente para las cajas */
-        }
         
-        /* Ajuste para el botón de CV */
-        a[download][style*="background-color: #007bff"] {
+        /* Estilo para las cajas de Experiencias */
+        div[style*="border: 1px solid #ccc"] {
+             border: 1px solid #333 !important; /* Borde oscuro */
+             background-color: #1a1a1a; /* Fondo ligeramente diferente para las cajas */
+        }
+
+        /* ---------------------------------------------------- */
+        /* MEJORA: Hipervínculos en la sección de Certificaciones (Estilo Sutil) */
+        /* ---------------------------------------------------- */
+        #certificaciones a {
+            color: #a4e38e; /* Color verde menta claro, legible sobre negro */
+            text-decoration: none; 
+            font-weight: normal; 
+            border-bottom: 1px dashed #444; /* Línea punteada sutil para indicar que es un enlace */
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+
+        #certificaciones a:hover {
+            color: #fff; /* Blanco puro al pasar el cursor */
+            border-bottom: 1px solid #a4e38e; /* El subrayado se vuelve sólido y del color de acento */
+        }
+
+        /* Estilo para el botón de Descargar CV */
+        a[download] {
             background-color: #8ab4f8 !important; /* Botón de CV con color que contraste */
             color: #111 !important; /* Texto oscuro en el botón */
             font-weight: bold;
+            text-decoration: none; /* Asegurar que el botón no tenga línea de enlace */
+            border-bottom: none !important;
+        }
+        
+        /* Estilo para los enlaces de contacto en el header */
+        header a {
+            color: #8ab4f8;
+            text-decoration: none;
         }
 
     </style>
@@ -133,7 +160,7 @@
             </ul>
         </div>
 
-</section>
+    </section>
 
     <section id="cv">
         <h3>Currículum Vitae y Contacto</h3>
@@ -158,7 +185,7 @@
     </section>
 
     <footer>
-        <p style="text-align: center; font-size: 0.8em; margin-top: 50px;">&copy; 2024 Ignacio Faúndez Pérez. Todos los derechos reservados.</p>
+        <p style="text-align: center; font-size: 0.8em; margin-top: 50px; color: #555;">&copy; 2024 Ignacio Faúndez Pérez. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
