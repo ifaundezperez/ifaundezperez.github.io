@@ -5,13 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ignacio Faúndez Pérez | Portafolio Profesional</title>
     <style>
-        /* Esto es un estilo simple para que se vea ordenado */
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; max-width: 900px; margin: 20px auto; }
-        header { background-color: #f4f4f4; padding: 20px; text-align: center; border-radius: 8px; }
-        nav a { margin: 0 15px; text-decoration: none; color: #007bff; font-weight: bold; }
-        section { padding: 20px 0; border-bottom: 1px solid #ddd; }
-        .habilidades { list-style: none; padding: 0; }
-        .habilidades li { display: inline-block; background: #eee; padding: 5px 10px; margin: 5px; border-radius: 5px; }
+        /* Estilo para Modo Oscuro (Dark Mode) */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #111; /* CAMBIO: Fondo negro/gris muy oscuro */
+            color: white; /* CAMBIO: Color de texto principal a blanco */
+        }
+        header {
+            background-color: #111; /* Fondo del encabezado a oscuro */
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            border-bottom: 2px solid #333; /* Separador sutil */
+        }
+        h1, h2, h3, h4 {
+            color: #eee; /* Asegurar que los encabezados sean claramente visibles */
+        }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #8ab4f8; /* Un azul más claro que contrasta con el fondo oscuro */
+            font-weight: bold; 
+        }
+        section { 
+            padding: 20px 0; 
+            border-bottom: 1px solid #333; /* Línea separadora más oscura */
+        }
+        .habilidades { 
+            list-style: none; 
+            padding: 0; 
+        }
+        .habilidades li { 
+            display: inline-block; 
+            background: #333; /* Fondo oscuro para las etiquetas de habilidad */
+            color: white; /* Texto blanco en las etiquetas */
+            padding: 5px 10px; 
+            margin: 5px; 
+            border-radius: 5px; 
+        }
+        /* Ajuste para los divs de Experiencias */
+        div[style*="border: 1px solid #ccc"] {
+             border: 1px solid #333 !important; /* Ajustar el borde a oscuro */
+             background-color: #1a1a1a; /* Un fondo ligeramente diferente para las cajas */
+        }
+        
+        /* Ajuste para el botón de CV */
+        a[download][style*="background-color: #007bff"] {
+            background-color: #8ab4f8 !important; /* Botón de CV con color que contraste */
+            color: #111 !important; /* Texto oscuro en el botón */
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -22,7 +70,7 @@
 
         <nav>
             <a href="#perfil">Perfil</a>
-            <a href="#proyectos">Proyectos Destacados</a>
+            <a href="#Experiencias">Experiencias destacadas</a>
             <a href="#cv">CV & Servicios</a>
             <a href="#certificaciones">Certificados</a>
         </nav>
@@ -53,8 +101,8 @@
         </ul>
     </section>
 
-    <section id="proyectos">
-        <h3>Proyectos Destacados</h3>
+    <section id="Experiencias">
+        <h3>Experiencias destacadas</h3>
         <p>A continuación, se presentan mis principales trabajos que demuestran habilidades clave en desarrollo web, gestión de bases de datos y lógica de programación.</p>
     
         <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; border-radius: 5px;">
